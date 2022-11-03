@@ -12,12 +12,12 @@
 
 <body>
     <!-- header-start -->
-    <header class="container mt-2 fixed-top">
-        <!-- navFixTop-start -->
-        <div class="row justify-content-start">
+    <header class="container mt-2">
+        <!-- navStickyTop-start -->
+        <div class="row justify-content-start sticky-top mx-auto p-0">
             <!-- logo-start -->
             <div class="col-2 order-0 order-lg-0">
-                <img src="../imgs/mehrashop-logo.png" alt="logo">
+                <a href="#"><img src="../imgs/mehrashop-logo.png" alt="logo"></a>
             </div>
             <!-- logo-end -->
 
@@ -25,15 +25,15 @@
             <div class="col-12 col-lg-7 order-2 order-lg-1">
                 <form class="form-control rounded-0 d-flex mt-2" role="search">
                     <div class="dropdown">
-                        <button class="btn btn-sm m mes-btn-2 mt-1 border-0 dropdown-toggle" type="button"
+                        <button class="btn btn-sm m msh-bg-white mt-1 border-0 dropdown-toggle" type="button"
                             data-bs-toggle="dropdown">
                             همه دسته بندی ها
                         </button>
-                        <ul class="dropdown-menu" id="drop-nav-fix-top"></ul>
+                        <ul class="dropdown-menu" id="catg-nav-fix-top"></ul>
                     </div>
                     <input class="form-control border-0 border-end me-2 rounded-0" type="search"
                         placeholder="کالای مورد نظر خود را جستجو کنید" />
-                    <button class="btn mes-btn-1 rounded-0" type="submit">
+                    <button class="btn msh-bg-light-green rounded-0" type="submit">
                         <img src="../icons/i-search.png" alt="search">
                     </button>
                 </form>
@@ -45,26 +45,120 @@
                 <button class="btn p-0 mx-3" style="width:20px; height: 20px;">
                     <img style="width:100%" src="../icons/i-profile.png" alt="profile">
                 </button>
-                <button class="btn p-0 mx-3 position-relative mes-counter-bag" mes-counter-bag="۲"
+                <button class="btn p-0 mx-3 position-relative msh-counter-bag" msh-counter-bag="۲"
                     style="width:20px; height:20px;">
                     <img style="width:100%" src="../icons/i-like.png" alt="like">
                 </button>
-                <button class="btn p-0 mx-3 position-relative mes-counter-bag" mes-counter-bag="۴"
+                <button class="btn p-0 mx-3 position-relative msh-counter-bag" msh-counter-bag="۴"
                     style="width:20px; height:20px;">
                     <img style="width:100%" src="../icons/i-shoping.png" alt="shoping">
                 </button>
             </div>
             <!-- activities-end -->
         </div>
-        <!-- navFixTop-end -->
+        <!-- navStickyTop-end -->
 
         <!-- slider-start -->
-        <div class="row"></div>
+        <div class="row m-1">
+            <!-- s-cat-start -->
+            <div class="col-12 col-lg-3 order-1 order-md-0">
+                <button class="btn msh-bg-light-green w-100 px-0 rounded-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#catg-nxt-slider" aria-controls="catg-nxt-slider">
+                    <div class="row justify-content-start align-items-start mx-0">
+                        <div class="col-1 d-flex flex-column justify-content-center px-0">
+                            <span style="height: 5px; font-size: 25px;">&oline;</span>
+                            <span style="height: 5px; font-size: 25px;">&oline;</span>
+                            <span style="height: 5px; font-size: 25px;">&oline;</span>
+                        </div>
+                        <div class="col-10 text-end pt-1">دسته بندی ها <span>&blacktriangledown;</span></div>
+                    </div>
+                </button>
+                </p>
+                <div class="collapse show" id="catg-nxt-slider">
+                    <ul type="none" class="list-group w-100 p-0 rounded-0" id="catg-head-slct">
+                    </ul>
+                </div>
+            </div>
+            <!-- s-cat-end -->
+
+            <!-- s-slider-start -->
+            <div class="col-12 col-lg-9 p-2 order-0 order-md-1">
+                <ul class="nav my-2 mb-3 ">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold px-2 msh-txt-black" style="font-size: 0.7rem;" aria-current="page"
+                            href="#">ثبت نام فروشنده</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold px-2 msh-txt-black" style="font-size: 0.7rem;" href="#">محصولات
+                            استوک</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold px-2 msh-txt-black" style="font-size: 0.7rem;" href="#">تخفیف ها و
+                            پیشنهادها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold px-2 msh-txt-black" style="font-size: 0.7rem;" href="#">بلاگ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold px-2 msh-txt-black" style="font-size: 0.7rem;" href="#">پرسشهای
+                            رایج</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold px-2 msh-txt-black d-none d-md-block" style="font-size: 0.7rem;"
+                            href="#">درباره مهراشاپ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold px-2 msh-txt-black d-none d-md-block" style=" font-size: 0.7rem;"
+                            href="#">ارتباط با ما</a>
+                    </li>
+                </ul>
+                <div id="header-slider" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../imgs/header-slider.png" class="d-block w-100" alt="">
+                            <div class="carousel-caption text-end w-50 p-3" style="top: 10px; right: 90px;">
+                                <div class="msh-txt-dark-green fs-6">بشقاب مهربانی</div>
+                                <div class="msh-txt-dark-green fw-bolder fs-4">خوراک تازه گیاهی</div>
+                                <div class="msh-txt-light-green fw-normal fs-4">هر روز با مواد اولیه سالم</div>
+                                <div class="msh-txt-dark-green fs-6">
+                                    خوراکهای ایرانی و بین المللی گیاهی، خام گیاهی و وگن با مواد
+                                    اولیه سالم و ارگانیک هر روز درب منزل شما. اکنون در شیراز
+                                </div>
+                                <button type="submit" class="btn msh-bg-dark-green m-3">اکنون خرید کنید</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#header-slider"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#header-slider"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- s-slider-end -->
+        </div>
         <!-- slider-end -->
 
-        <!-- suggested-start -->
-        <div class="row"></div>
-        <!-- suggested-end -->
+        <!-- suggestedCart-start -->
+        <div class="container m-1">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 my-1 text-center">
+                    <a href="#"><img class="w-100" src="../imgs/banner-1.jpg" alt=""></a>
+                </div>
+                <div class="col-12 col-md-4 my-1 text-center">
+                    <a href="#"><img class="w-100" src="../imgs/banner-2.jpg" alt=""></a>
+                </div>
+                <div class="col-12 col-md-4 my-1 text-center">
+                    <a href="#"><img class="w-100" src="../imgs/banner-3.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- suggestedCart-end -->
     </header>
     <!-- header-end -->
 

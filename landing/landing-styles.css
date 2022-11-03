@@ -11,25 +11,70 @@
 
 /* root-end */
 
-
-/* btn-start */
-.mes-btn-1 {
+/* bg-start */
+.msh-bg-light-green {
     background-color: var(--theme-color-light-green);
     color: var(--theme-color-white);
 }
 
-.mes-btn-1:hover {
+.msh-bg-light-green:hover {
     background-color: var(--theme-color-medium-green);
     color: var(--theme-color-black);
 }
 
-.mes-btn-2 {
+.msh-bg-dark-green {
+    background-color: var(--theme-color-dark-green);
+    color: var(--theme-color-white);
+}
+
+.msh-bg-dark-green:hover {
+    background-color: var(--theme-color-white);
+    color: var(--theme-color-dark-green);
+}
+
+.msh-bg-white {
     background-color: var(--theme-color-white);
     color: var(--theme-color-black);
 }
 
-.mes-counter-bag::after {
-    content: attr(mes-counter-bag);
+/* bg-end */
+
+
+/* txt-start */
+.msh-txt-white {
+    color: var(--theme-color-white);
+}
+
+.msh-txt-black {
+    color: var(--theme-color-black);
+}
+
+.msh-txt-green {
+    color: var(--theme-color-green);
+}
+
+.msh-txt-light-green {
+    color: var(--theme-color-light-green);
+}
+
+.msh-txt-medium-green {
+    color: var(--theme-color-medium-green);
+}
+
+.msh-txt-dark-green {
+    color: var(--theme-color-dark-green);
+}
+
+.msh-txt-dark-red {
+    color: var(--theme-color-dark-green);
+}
+
+/* txt-end */
+
+
+/* btn-start */
+.msh-counter-bag::after {
+    content: attr(msh-counter-bag);
     position: absolute;
     display: grid;
     place-items: center center;
@@ -46,4 +91,13 @@
     border: 1px solid var(--theme-color-white);
     background-color: var(--theme-color-green);
 }
+
 /* btn-end */
+
+
+/* header-start */
+.nav .nav-item .nav-link:focus {
+    color: var(--theme-color-green);
+}
+
+/* header-end */
