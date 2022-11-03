@@ -1,0 +1,49 @@
+/* root-start */
+:root {
+    --theme-color-white: white;
+    --theme-color-black: black;
+    --theme-color-green: #86bc42;
+    --theme-color-light-green: #849d6a;
+    --theme-color-medium-green: #41544a;
+    --theme-color-dark-green: #2c3a33;
+    --theme-color-dark-red: #b04d50;
+}
+
+/* root-end */
+
+
+/* btn-start */
+.mes-btn-1 {
+    background-color: var(--theme-color-light-green);
+    color: var(--theme-color-white);
+}
+
+.mes-btn-1:hover {
+    background-color: var(--theme-color-medium-green);
+    color: var(--theme-color-black);
+}
+
+.mes-btn-2 {
+    background-color: var(--theme-color-white);
+    color: var(--theme-color-black);
+}
+
+.mes-counter-bag::after {
+    content: attr(mes-counter-bag);
+    position: absolute;
+    display: grid;
+    place-items: center center;
+    z-index: 4;
+    font-size: 0.5em;
+    font-weight: bolder;
+    width: 18px;
+    height: 18px;
+    top: -4px;
+    right: 10px;
+    clip-path: circle();
+    border-radius: 50%;
+    color: var(--theme-color-white);
+    border: 1px solid var(--theme-color-white);
+    background-color: var(--theme-color-green);
+}
+/* btn-end */

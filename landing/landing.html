@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./landing-styles.css">
+    <title>Mehra Shop</title>
+</head>
+
+<body>
+    <!-- header-start -->
+    <header class="container mt-2 fixed-top">
+        <!-- navFixTop-start -->
+        <div class="row justify-content-start">
+            <!-- logo-start -->
+            <div class="col-2 order-0 order-lg-0">
+                <img src="../imgs/mehrashop-logo.png" alt="logo">
+            </div>
+            <!-- logo-end -->
+
+            <!-- search-start -->
+            <div class="col-12 col-lg-7 order-2 order-lg-1">
+                <form class="form-control rounded-0 d-flex mt-2" role="search">
+                    <div class="dropdown">
+                        <button class="btn btn-sm m mes-btn-2 mt-1 border-0 dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown">
+                            همه دسته بندی ها
+                        </button>
+                        <ul class="dropdown-menu" id="drop-nav-fix-top"></ul>
+                    </div>
+                    <input class="form-control border-0 border-end me-2 rounded-0" type="search"
+                        placeholder="کالای مورد نظر خود را جستجو کنید" />
+                    <button class="btn mes-btn-1 rounded-0" type="submit">
+                        <img src="../icons/i-search.png" alt="search">
+                    </button>
+                </form>
+            </div>
+            <!-- search-end -->
+
+            <!-- activities-start -->
+            <div class="col-10 col-lg-3 order-1 order-lg-2 d-flex justify-content-end align-items-center mt-2">
+                <button class="btn p-0 mx-3" style="width:20px; height: 20px;">
+                    <img style="width:100%" src="../icons/i-profile.png" alt="profile">
+                </button>
+                <button class="btn p-0 mx-3 position-relative mes-counter-bag" mes-counter-bag="۲"
+                    style="width:20px; height:20px;">
+                    <img style="width:100%" src="../icons/i-like.png" alt="like">
+                </button>
+                <button class="btn p-0 mx-3 position-relative mes-counter-bag" mes-counter-bag="۴"
+                    style="width:20px; height:20px;">
+                    <img style="width:100%" src="../icons/i-shoping.png" alt="shoping">
+                </button>
+            </div>
+            <!-- activities-end -->
+        </div>
+        <!-- navFixTop-end -->
+
+        <!-- slider-start -->
+        <div class="row"></div>
+        <!-- slider-end -->
+
+        <!-- suggested-start -->
+        <div class="row"></div>
+        <!-- suggested-end -->
+    </header>
+    <!-- header-end -->
+
+
+    <!-- scripts-start -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./landing-scripts.js"></script>
+    <!-- scripts-end -->
+</body>
+
+</html>
