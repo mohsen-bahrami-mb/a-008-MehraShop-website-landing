@@ -66,7 +66,19 @@
 }
 
 .msh-txt-dark-red {
-    color: var(--theme-color-dark-green);
+    color: var(--theme-color-dark-red);
+}
+
+.msh-fs-0p8 {
+    font-size: 0.8rem;
+}
+
+.msh-fs-0p7 {
+    font-size: 0.7rem;
+}
+
+.msh-fs-0p5 {
+    font-size: 0.5rem;
 }
 
 /* txt-end */
@@ -101,3 +113,76 @@
 }
 
 /* header-end */
+
+
+/* lovelyCatg-start */
+#lovely-catg li {
+    cursor: pointer;
+    padding-top: 0.6rem;
+}
+
+#lovely-catg li:hover,
+#lovely-catg li:focus {
+    color: var(--theme-color-dark-red);
+}
+
+/* lovelyCatg-end */
+
+
+/* offer-start */
+#offer {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    border: 2px solid var(--theme-color-dark-red);
+}
+
+#offer #offer-counter {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    width: 350px;
+    height: 60px;
+    background-color: white;
+    display: grid;
+    place-items: center center;
+}
+
+#offer #offer-counter div div:last-child {
+    background-color: var(--theme-color-dark-red);
+    color: var(--theme-color-white);
+}
+
+#offer-cards a {
+    cursor: pointer;
+}
+
+#offer-cards img.position-absolute {
+    top: -20px;
+    right: 0px;
+}
+
+#offer-cards a:hover,
+#offer-cards a:focus {
+    color: var(--theme-color-dark-red);
+    border: 1px solid var(--theme-color-dark-red);
+    border-radius: 5px;
+}
+
+.range-sale {
+    position: relative;
+    width: 70%;
+    height: 5px;
+    background-color: #acacac;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.range-full-sale {
+    position: absolute;
+    background-color: var(--theme-color-dark-red);
+    height: 5px;
+    /* width: 30px; */
+}
+
+/* offer-end */

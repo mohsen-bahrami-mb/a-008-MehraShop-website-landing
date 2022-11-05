@@ -10,11 +10,11 @@
     <title>Mehra Shop</title>
 </head>
 
-<body>
+<body class="container">
     <!-- header-start -->
-    <header class="container mt-2">
+    <header>
         <!-- navStickyTop-start -->
-        <div class="row justify-content-start sticky-top mx-auto p-0">
+        <div class="row justify-content-start bg-white border-bottom sticky-top mx-auto my-1 py-2">
             <!-- logo-start -->
             <div class="col-2 order-0 order-lg-0">
                 <a href="#"><img src="../imgs/mehrashop-logo.png" alt="logo"></a>
@@ -59,8 +59,8 @@
         <!-- navStickyTop-end -->
 
         <!-- slider-start -->
-        <div class="row m-1">
-            <!-- s-cat-start -->
+        <div class="row mt-2">
+            <!-- s-catg-start -->
             <div class="col-12 col-lg-3 order-1 order-md-0">
                 <button class="btn msh-bg-light-green w-100 px-0 rounded-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#catg-nxt-slider" aria-controls="catg-nxt-slider">
@@ -79,46 +79,47 @@
                     </ul>
                 </div>
             </div>
-            <!-- s-cat-end -->
+            <!-- s-catg-end -->
 
             <!-- s-slider-start -->
             <div class="col-12 col-lg-9 p-2 order-0 order-md-1">
+                <!-- s-nav -->
                 <ul class="nav my-2 mb-3 ">
                     <li class="nav-item">
-                        <a class="nav-link fw-bold px-2 msh-txt-black" style="font-size: 0.7rem;" aria-current="page"
-                            href="#">ثبت نام فروشنده</a>
+                        <a class="nav-link fw-bold px-2 msh-txt-black msh-fs-0p8" href="#">ثبت نام فروشنده</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold px-2 msh-txt-black" style="font-size: 0.7rem;" href="#">محصولات
+                        <a class="nav-link fw-bold px-2 msh-txt-black msh-fs-0p8" href="#">محصولات
                             استوک</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold px-2 msh-txt-black" style="font-size: 0.7rem;" href="#">تخفیف ها و
+                        <a class="nav-link fw-bold px-2 msh-txt-black msh-fs-0p8" href="#">تخفیف ها و
                             پیشنهادها</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold px-2 msh-txt-black" style="font-size: 0.7rem;" href="#">بلاگ</a>
+                        <a class="nav-link fw-bold px-2 msh-txt-black msh-fs-0p8" href="#">بلاگ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold px-2 msh-txt-black" style="font-size: 0.7rem;" href="#">پرسشهای
+                        <a class="nav-link fw-bold px-2 msh-txt-black msh-fs-0p8" href="#">پرسشهای
                             رایج</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold px-2 msh-txt-black d-none d-md-block" style="font-size: 0.7rem;"
-                            href="#">درباره مهراشاپ</a>
+                        <a class="nav-link fw-bold px-2 msh-txt-black d-none d-md-block msh-fs-0p8" href="#">درباره
+                            مهراشاپ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold px-2 msh-txt-black d-none d-md-block" style=" font-size: 0.7rem;"
-                            href="#">ارتباط با ما</a>
+                        <a class="nav-link fw-bold px-2 msh-txt-black d-none d-md-block msh-fs-0p8" href="#">ارتباط با
+                            ما</a>
                     </li>
                 </ul>
-                <div id="header-slider" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+                <!-- s-slider -->
+                <div id="header-slider" class="carousel slide d-none d-md-block ms-1" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="../imgs/header-slider.png" class="d-block w-100" alt="">
                             <div class="carousel-caption text-end w-50 p-3" style="top: 10px; right: 90px;">
                                 <div class="msh-txt-dark-green fs-6">بشقاب مهربانی</div>
-                                <div class="msh-txt-dark-green fw-bolder fs-4">خوراک تازه گیاهی</div>
+                                <div class="msh-txt-dark-green fw-bolder display-6">خوراک تازه گیاهی</div>
                                 <div class="msh-txt-light-green fw-normal fs-4">هر روز با مواد اولیه سالم</div>
                                 <div class="msh-txt-dark-green fs-6">
                                     خوراکهای ایرانی و بین المللی گیاهی، خام گیاهی و وگن با مواد
@@ -144,8 +145,8 @@
         </div>
         <!-- slider-end -->
 
-        <!-- suggestedCart-start -->
-        <div class="container m-1">
+        <!-- suggestedCard-start -->
+        <div class="mt-2">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-4 my-1 text-center">
                     <a href="#"><img class="w-100" src="../imgs/banner-1.jpg" alt=""></a>
@@ -158,11 +159,177 @@
                 </div>
             </div>
         </div>
-        <!-- suggestedCart-end -->
+        <!-- suggestedCard-end -->
     </header>
     <!-- header-end -->
 
+    <!-- main-start -->
+    <main>
+        <!-- commitment-start -->
+        <div class="row my-3 align-items-center">
+            <div class="col-6 col-lg-3 p-1">
+                <div class="row align-items-center">
+                    <div class="col-3"><img class="w-100" src="../imgs/commitment-1.png" alt=""></div>
+                    <div class="col-9">
+                        <div class="fw-bold msh-txt-black">خرید از سراسر دنیا</div>
+                        <div class="text-secondary msh-fs-0p7">خرید محصولات پاک از فروشگاههای معتبر دنیا
+                            را در مهراشاپ تجربه کنید.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 p-1">
+                <div class="row align-items-center text-decoration-none">
+                    <div class="col-3"><img class="w-100" src="../imgs/commitment-2.jpg" alt=""></div>
+                    <div class="col-9">
+                        <div class="fw-bold msh-txt-black">نخستین مرکز فروشگاههای گیاهی</div>
+                        <div class="text-secondary msh-fs-0p7">مهراشاپ؛ یک فروشگاه سبز، ارگانیک و بدون
+                            ستم است.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 p-1">
+                <div class="row align-items-center text-decoration-none">
+                    <div class="col-3"><img class="w-100" src="../imgs/commitment-3.png" alt=""></div>
+                    <div class="col-9">
+                        <div class="fw-bold msh-txt-black">تضمین بازگشت پول</div>
+                        <div class="text-secondary msh-fs-0p7">در صورت وجود مشکل در کالا، فوری بازگشت
+                            پول انجام خواهد شد.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 p-1">
+                <div class="row align-items-center text-decoration-none">
+                    <div class="col-3"><img class="w-100" src="../imgs/commitment-4.png" alt=""></div>
+                    <div class="col-9">
+                        <div class="fw-bold msh-txt-black">ضمانت اصالت کالا</div>
+                        <div class="text-secondary msh-fs-0p7">مهراشاپ اصالت کالا را برای شما عزیزان
+                            تضمین می کند</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- commitment-end -->
 
+        <!-- lovely-start -->
+        <div class="row ">
+            <h4 class="col-8 fw-bold mt-4" style="font-size: 1rem">دوست داشتنی ترین دسته بندی ها</h4>
+            <a class="col-4 text-start mt-4 fw-bold msh-txt-black msh-fs-0p7" style="cursor: pointer;">
+                مشاهده همه
+            </a>
+        </div>
+        <div class="row" id="lovely-catg">
+            <div class="col-6 col-lg-3 px-3 py-1">
+                <div class="row border h-100 rounded p-1">
+                    <div class="col-7">
+                        <div class="fw-bolder msh-fs-0p8">الکترونیک</div>
+                        <ul class="text-secondary msh-fs-0p8 pe-3">
+                            <li>کامپیوتر رو میزی</li>
+                            <li>لپ تاپ</li>
+                            <li>تبلت</li>
+                            <li>موبایل</li>
+                            <li>هارد و مموری</li>
+                            <li>لوازم جانبی</li>
+                            <a class="fw-bold d-block mt-3 msh-fs-0p7 msh-txt-dark-red" href="#">مشاهده همه</a>
+                        </ul>
+                    </div>
+                    <div class="col-5 d-flex align-items-end pb-3">
+                        <img class="w-100 rounded-3" src="../imgs/lovlely-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 px-3 py-1">
+                <div class="row border h-100 rounded p-1">
+                    <div class="col-7">
+                        <div class="fw-bolder msh-fs-0p8">الکترونیک</div>
+                        <ul class="text-secondary msh-fs-0p8 pe-3">
+                            <li>صوتی و تصویری</li>
+                            <li>دکوراسیون</li>
+                            <li>نور و روشنایی</li>
+                            <li>آشپزخانه</li>
+                            <li>حیوانات خانگی</li>
+                            <li>فرش و دستبافت</li>
+                            <a class="fw-bold d-block mt-3 msh-fs-0p7 msh-txt-dark-red" href="#">مشاهده همه</a>
+                        </ul>
+                    </div>
+                    <div class="col-5 d-flex align-items-end pb-3">
+                        <img class="w-100 rounded-3" src="../imgs/lovlely-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 px-3 py-1">
+                <div class="row border h-100 rounded p-1">
+                    <div class="col-7">
+                        <div class="fw-bolder msh-fs-0p8">الکترونیک</div>
+                        <ul class="text-secondary msh-fs-0p8 pe-3">
+                            <li>لباس زنانه</li>
+                            <li>اکسسوری زنانه</li>
+                            <li>لباس مردانه</li>
+                            <li>زیورآلات زنانه</li>
+                            <li>پوشاک کودک</li>
+                            <li>عینک آفتابی</li>
+                            <a class="fw-bold d-block mt-3 msh-fs-0p7 msh-txt-dark-red" href="#">مشاهده همه</a>
+                        </ul>
+                    </div>
+                    <div class="col-5 d-flex align-items-end pb-3">
+                        <img class="w-100 rounded-3" src="../imgs/lovlely-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 px-3 py-1">
+                <div class="row border h-100 rounded p-1">
+                    <div class="col-7">
+                        <div class="fw-bolder msh-fs-0p8">الکترونیک</div>
+                        <ul class="text-secondary msh-fs-0p8 pe-3">
+                            <li>دسر و کیک</li>
+                            <li>ساندویچ</li>
+                            <li>پیتزا</li>
+                            <li>سالادها</li>
+                            <li>چلو و خورش ها</li>
+                            <li>نوشیدنی ها</li>
+                            <a class="fw-bold d-block mt-3 msh-fs-0p7 msh-txt-dark-red" href="#">مشاهده همه</a>
+                        </ul>
+                    </div>
+                    <div class="col-5 d-flex align-items-end pb-3">
+                        <img class="w-100 rounded-3" src="../imgs/lovlely-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- lovely-end -->
+
+        <!-- offer-start -->
+        <div class="d-flex justify-content-center align-items-center my-5">
+            <div class="text-center" style="width: 5%; cursor: pointer;">
+                <img class="w-75" src="../icons/i-next.png" alt="">
+            </div>
+            <div id="offer">
+                <div id="offer-counter">
+                    <div class="row justify-content-between w-100 px-4">
+                        <div class="col-5 fw-bold"> حراجی روز</div>
+                        <div
+                            class="col-6 d-flex justify-content-between align-items-center rounded-pill fw-bold msh-fs-0p7">
+                            <div>مانده تا پایان:</div>
+                            <div>
+                                <span>29</span>
+                                <span>:</span>
+                                <span>43</span>
+                                <span>:</span>
+                                <span>11</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 h-100 p-3 pt-5">
+                    <div class="row" id="offer-cards"></div>
+                </div>
+            </div>
+            <div class="text-center" style="width: 5%; cursor: pointer;">
+                <img class="w-75" src="../icons/i-prev.png" alt="">
+            </div>
+        </div>
+        <!-- offer-end -->
+    </main>
+    <!-- main-end -->
     <!-- scripts-start -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
