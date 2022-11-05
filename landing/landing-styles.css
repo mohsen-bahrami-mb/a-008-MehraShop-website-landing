@@ -11,25 +11,40 @@
 
 /* root-end */
 
+
+/* btn-start */
+.msh-btn-light-green {
+    background-color: var(--theme-color-light-green);
+    color: var(--theme-color-white);
+}
+
+.msh-btn-light-green:hover {
+    background-color: var(--theme-color-medium-green);
+    color: var(--theme-color-white);
+}
+
+.msh-btn-dark-green {
+    background-color: var(--theme-color-dark-green);
+    color: var(--theme-color-white);
+}
+
+.msh-btn-dark-green:hover {
+    background-color: var(--theme-color-white);
+    color: var(--theme-color-dark-green);
+}
+
+/* btn-end */
+
+
 /* bg-start */
 .msh-bg-light-green {
     background-color: var(--theme-color-light-green);
     color: var(--theme-color-white);
 }
 
-.msh-bg-light-green:hover {
-    background-color: var(--theme-color-medium-green);
-    color: var(--theme-color-black);
-}
-
 .msh-bg-dark-green {
     background-color: var(--theme-color-dark-green);
     color: var(--theme-color-white);
-}
-
-.msh-bg-dark-green:hover {
-    background-color: var(--theme-color-white);
-    color: var(--theme-color-dark-green);
 }
 
 .msh-bg-white {
@@ -182,7 +197,22 @@
     position: absolute;
     background-color: var(--theme-color-dark-red);
     height: 5px;
-    /* width: 30px; */
 }
 
 /* offer-end */
+
+
+/* footer-start */
+footer {
+    background-image: url(../imgs/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+footer ul li a:hover {
+    color: var(--theme-color-light-green);
+    cursor: pointer;
+}
+
+/* footer-end */
